@@ -108,10 +108,7 @@ def show_results(images_arr, gx_arr, gy_arr, mag_arr, filenames):
 
         plt.tight_layout()
         plt.show()
-
-# -----------------------------
 # Run
-# -----------------------------
 images_arr, filenames = load_grayscale_images_to_ndarray(IMAGE_DIR)
 print("Loaded ndarray shape:", images_arr.shape, "| dtype:", images_arr.dtype)
 
@@ -121,6 +118,4 @@ print("Gx feature maps shape:", gx_arr.shape)
 print("Gy feature maps shape:", gy_arr.shape)
 print("Magnitude maps shape:", mag_arr.shape)
 
-# דרישה 3: להציג את התמונות של ה-feature-map שנוצרו ב-2ג
-# (אני מציג גם gx, gy בנוסף — זה עוזר לבדיקה, אבל 2ג הוא ה-magnitude)
 show_results(images_arr, gx_arr, gy_arr, mag_arr, filenames)
